@@ -1,0 +1,9 @@
+name: unit testing workflow
+on: 
+  push
+  workflow-dispatch
+    branch:
+      - main
+      - 'feature/*'
+jobs:
+  unit-testing: 
