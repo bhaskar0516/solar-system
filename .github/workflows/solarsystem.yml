@@ -6,4 +6,17 @@ on:
       - main
       - 'feature/*'
 jobs:
-  unit-testing: 
+  unit-testing:
+    name: download artifacts
+    uses: actions/checkout@v3
+
+    name: setup node JS version 
+    uses: actions/setup-node@v3
+    with:
+      node-version: 18
+
+    name: node package manager install
+    run: npm install
+
+    name: unit testing 
+    run: npm test
