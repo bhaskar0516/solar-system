@@ -8,8 +8,8 @@ jobs:
   unit-testing:
     runs-on: ubuntu-latest
     steps:
-      name: download artifacts
-      uses: actions/checkout@v3
+      name: download repos
+      uses: actions/checkout@v4
 
       name: setup node JS version 
       uses: actions/setup-node@v3
