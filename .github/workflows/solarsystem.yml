@@ -19,7 +19,7 @@ jobs:
       - name: setup node JS version 
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 24
 
       - name: node package manager install
         run: npm install
