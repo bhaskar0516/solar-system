@@ -1,6 +1,6 @@
 name: unit testing workflow
 on:  
-  push
+  push:
     branches:
       - main
       - 'feature/*'
