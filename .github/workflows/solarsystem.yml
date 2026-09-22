@@ -27,6 +27,9 @@ jobs:
       - name: unit testing 
         run: npm test
 
+      - name: list the files
+        run : ls -la
+
       - name: Archieve test results
         uses: actions/upload-artifact@v4
         with:
