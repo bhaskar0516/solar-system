@@ -1,7 +1,7 @@
 name: unit testing workflow
 on: 
   push
-  workflow-dispatch
+  workflow_dispatch
     branches:
       - main
       - 'feature/*'
