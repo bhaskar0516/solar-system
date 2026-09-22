@@ -1,8 +1,8 @@
 name: unit testing workflow
 on:  push
-    branches:
-      - main
-      - 'feature/*'
+  branches:
+    - main
+    - 'feature/*'
 jobs:
   unit-testing:
     name: download artifacts
