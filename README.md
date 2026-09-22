@@ -51,3 +51,9 @@ If the installation was successful, you should be able to run the following comm
 #DB url- mongodb+srv://supercluster.d83jj.mongodb.net/superData
 #user-superuser
 #pwd-SuperPassword
+
+      # - name: Check MongoDB variables
+      #   run: |
+      #     echo "MONGO_URI is set: ${{ env.MONGO_URI != '' }}"
+      #     echo "MONGO_USERNAME is set: ${{ env.MONGO_USERNAME != '' }}"
+      #     echo "MONGO_PASSWORD is set: ${{ env.MONGO_PASSWORD != '' }}" 
