@@ -7,7 +7,7 @@ on:
 jobs:
   unit-testing:
     runs-on: ubuntu-latest
-    steps
+    steps:
       name: download artifacts
       uses: actions/checkout@v3
 
