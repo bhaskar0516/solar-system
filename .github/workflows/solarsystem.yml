@@ -8,16 +8,16 @@ jobs:
   unit-testing:
     runs-on: ubuntu-latest
     steps:
-      name: download repos
-      uses: actions/checkout@v4
+      - name: download repos
+        uses: actions/checkout@v4
 
-      name: setup node JS version 
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: setup node JS version 
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-      name: node package manager install
-      run: npm install
+      - name: node package manager install
+        run: npm install
 
-      name: unit testing 
-      run: npm test
+      - name: unit testing 
+        run: npm test
